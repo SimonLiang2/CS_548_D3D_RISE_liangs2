@@ -56,11 +56,14 @@ def train(args_override):
     RANK = int(os.environ['RANK'])
     LOCAL_RANK = int(os.environ['LOCAL_RANK'])
     os.environ['NCCL_P2P_DISABLE'] = '1'
-    dist.init_process_group(backend = 'nccl', init_method = 'env://', world_size = WORLD_SIZE, rank = RANK)
+    dist.init_process_group(backend = 'gloo', init_method = 'env://', world_size = WORLD_SIZE, rank = RANK)
 
     # set up device
     set_seed(args.seed)
-    torch.cuda.set_device(LOCAL_RANK)
+    if torch.cuda.is_available():
+        torch.cuda.set_device(LOCAL_RANK)
+    else:
+        print("CUDA is not available. Using CPU instead.")
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
     # dataset & dataloader
