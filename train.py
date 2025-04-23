@@ -4,6 +4,8 @@ import torch
 import argparse
 import numpy as np
 import torch.nn as nn
+import sys
+sys.path.append('dependencies/MinkowskiEngine')
 import MinkowskiEngine as ME
 import matplotlib.pyplot as plt
 import torch.distributed as dist
