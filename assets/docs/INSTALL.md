@@ -12,6 +12,10 @@ Please follow the instructions to install the conda environments and the depende
 
 2. Manually install cudatoolkit, then install necessary dependencies.
     ```bash
+    export CONDA_CHANNELS=”nvidia/label/cuda-11.7.0”
+    conda install -y nvidia/label/cuda-11.7.0::cuda
+    nvcc –version
+
     pip install -r requirements.txt
     ```
 
@@ -32,6 +36,8 @@ Please follow the instructions to install the conda environments and the depende
 
 4. Install [Pytorch3D](https://github.com/facebookresearch/pytorch3d) manually.
     ```bash
+    conda install -c conda-forge compilers
+    conda install -c conda-forge libxcrypt
     cd dependencies
     git clone git@github.com:facebookresearch/pytorch3d.git
     cd pytorch3d
