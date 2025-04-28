@@ -2,7 +2,7 @@
 
 [[Paper]](https://arxiv.org/pdf/2404.12281.pdf) [[Project Page]](https://rise-policy.github.io/) [[Sample Data]](https://drive.google.com/drive/folders/1eIjPKf_g-1DjYqMTYjSzVBixjnveyD89?usp=sharing)
 
-**Authors**: [Chenxi Wang](https://github.com/chenxi-wang), [Hongjie Fang](https://tonyfang.net/), [Hao-Shu Fang](https://fang-haoshu.github.io/), [Cewu Lu](https://www.mvig.org/)
+**OriginalAuthors**: [Chenxi Wang](https://github.com/chenxi-wang), [Hongjie Fang](https://tonyfang.net/), [Hao-Shu Fang](https://fang-haoshu.github.io/), [Cewu Lu](https://www.mvig.org/)
 
 ![teaser](assets/images/teaser.jpg)
 
@@ -13,6 +13,9 @@ This is a fork created for a CS 548 class project at SUNY Polytechnic
 Group Member: Simon Liang
 
 Changes Made to Software/Environment Setup can be found in assets/docs/INSTALL.md
+Paper: [[Paper]](https://arxiv.org/pdf/2404.12281.pdf) 
+[[Project Page]](https://rise-policy.github.io/) 
+Sample Data found here: [[Sample Data]](https://drive.google.com/drive/folders/1eIjPKf_g-1DjYqMTYjSzVBixjnveyD89?usp=sharing)
 
 ### 💻 Installation Guide
 
