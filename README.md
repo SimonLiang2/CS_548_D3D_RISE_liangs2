@@ -6,15 +6,15 @@
 
 ![teaser](assets/images/teaser.jpg)
 
-## 🔥 News
+## Description
 
-- **[Feb 16, 2025]** Optimize spatial data augmentation. Add data visualization for config check. Add tips for setting workspace range and normalization range.
-- **[Dec 26, 2024]** Fix several potential installation issues. Add support for CUDA 12.1.
-- **[May 11, 2024]** Initial release.
+This is a fork created for a CS 548 class project at SUNY Polytechnic 
 
-## 🛫 Getting Started
+Group Member: Simon Liang
 
-### 💻 Installation
+Changes Made to Software/Environment Setup can be found in assets/docs/INSTALL.md
+
+### 💻 Installation Guide
 
 Please follow the [installation guide](assets/docs/INSTALL.md) to install the `rise` conda environments and the dependencies, as well as the real robot environments. Also, remember to adjust the constant parameters in `dataset/constants.py` and `utils/constants.py` according to your own environment.
 
