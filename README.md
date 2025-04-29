@@ -1,3 +1,43 @@
+## Description
+This is a fork created for a CS 548 class project at SUNY Polytechnic 
+
+Group Member: Simon Liang
+
+Changes Made to Software/Environment Setup can be found in assets/docs/INSTALL.md
+Please go to the [installation guide](assets/docs/INSTALL.md) to set up environment and dependencies.
+
+Paper: [[Paper]](https://arxiv.org/pdf/2404.12281.pdf) 
+
+[[Project Page]](https://rise-policy.github.io/) 
+
+Sample Data that was used can be found here: [[Sample Data]](https://drive.google.com/drive/folders/1eIjPKf_g-1DjYqMTYjSzVBixjnveyD89?usp=sharing)
+
+In Minkowski Engine, this is used as an example where it's a segmentation of a hotel room.
+Note: this requires you to have followed the installation guide.
+```
+cd MinkowskiEngine
+python -m examples.indoor
+```
+
+When you run the above example, it will download pretrained weights of a
+Minkowski network and will visualize the semantic segmentation results of a 3D scene.
+
+Additionally this was used to see simple demo example that trains a 3D
+convolutional neural network that reconstructs a 3D sparsity pattern with examples provided from Minkowski Engine
+
+Warning: the following will download a large *.tgz file with multiple models for MinkowskiEngine
+This was used for network predictions, or to try out a pretrained model:
+```
+  cd MinkowskiEngine
+  python -m examples.reconstruction
+```
+
+Additionally Minkowski Engine:
+4D Spatio-Temporal ConvNets: Minkowski Convolutional Neural Networks
+Christopher Choy, JunYoung Gwak, Silvio Savarese
+CVPR 2019
+[Paper](https://arxiv.org/abs/1904.08755)
+
 # 📈 RISE: 3D Perception Makes Real-World Robot Imitation Simple and Effective
 
 [[Paper]](https://arxiv.org/pdf/2404.12281.pdf) [[Project Page]](https://rise-policy.github.io/) [[Sample Data]](https://drive.google.com/drive/folders/1eIjPKf_g-1DjYqMTYjSzVBixjnveyD89?usp=sharing)
@@ -5,17 +45,6 @@
 **OriginalAuthors**: [Chenxi Wang](https://github.com/chenxi-wang), [Hongjie Fang](https://tonyfang.net/), [Hao-Shu Fang](https://fang-haoshu.github.io/), [Cewu Lu](https://www.mvig.org/)
 
 ![teaser](assets/images/teaser.jpg)
-
-## Description
-
-This is a fork created for a CS 548 class project at SUNY Polytechnic 
-
-Group Member: Simon Liang
-
-Changes Made to Software/Environment Setup can be found in assets/docs/INSTALL.md
-Paper: [[Paper]](https://arxiv.org/pdf/2404.12281.pdf) 
-[[Project Page]](https://rise-policy.github.io/) 
-Sample Data found here: [[Sample Data]](https://drive.google.com/drive/folders/1eIjPKf_g-1DjYqMTYjSzVBixjnveyD89?usp=sharing)
 
 ### 💻 Installation Guide
 

@@ -10,7 +10,7 @@ Please follow the instructions to install the conda environments and the depende
     conda activate rise
     ```
 
-2. Manually install cudatoolkit, then install necessary dependencies.
+2. Manually install cudatoolkit, then install necessary dependencies. (In this case CUDA 11.7 was installed)
     ```bash
     export CONDA_CHANNELS=”nvidia/label/cuda-11.7.0”
     conda install -y nvidia/label/cuda-11.7.0::cuda
@@ -24,7 +24,7 @@ Please follow the instructions to install the conda environments and the depende
     mkdir dependencies && cd dependencies
     conda install openblas-devel -c anaconda
     export CUDA_HOME=/path/to/cuda
-    git clone git@github.com:chenxi-wang/MinkowskiEngine.git
+    git clone git@github.com:chenxi-wang/MinkowskiEngine.git or git clone https://github.com/chenxi-wang/MinkowskiEngine/tree/cuda-12-1
     cd MinkowskiEngine
     python setup.py install --blas_include_dirs=${CONDA_PREFIX}/include --blas_library_dirs=${CONDA_PREFIX}/lib --blas=openblas
     cd ../..
@@ -39,7 +39,7 @@ Please follow the instructions to install the conda environments and the depende
     conda install -c conda-forge compilers
     conda install -c conda-forge libxcrypt
     cd dependencies
-    git clone git@github.com:facebookresearch/pytorch3d.git
+    git clone git@github.com:facebookresearch/pytorch3d.git or git clone https://github.com/facebookresearch/pytorch3d
     cd pytorch3d
     pip install -e .
     cd ../..
